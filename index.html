@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
@@ -79,7 +79,27 @@
             text-align: center;
             padding: 20px;
         }
-    </style>
+    
+/* Responsive video styling */
+video {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+}
+
+/* Ensure overlay text adjusts on smaller screens */
+@media (max-width: 768px) {
+    .overlay {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .overlay h2 {
+        font-size: 18px;
+    }
+}
+
+</style>
 </head>
 <body>
     <header>
@@ -178,6 +198,7 @@
                 <video src="videos/video2.mp4" controls></video>
                 <video src="videos/video3.mp4" controls></video>
                 <video src="videos/video4.mp4" controls></video>
+                <video src="videos/video5.mp4" controls></video>
             </div>
         </section>
     </main>
